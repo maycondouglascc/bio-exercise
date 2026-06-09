@@ -14,10 +14,17 @@ h1 {
   font-size: 24px;
   font-weight: 600;
   color: #f4f4f5;
+  margin: 0;
 }
 
 h2 {
   font-size: 24px;
+  font-weight: 500;
+  color: #f4f4f5;
+}
+
+h3 {
+  font-size: 16px;
   font-weight: 500;
   color: #f4f4f5;
 }
@@ -50,20 +57,34 @@ footer {
 }
 
 header {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 80px 24px 24px 24px;
+  display: flex;
+  gap: 16px;
+  background-color: #27272a42;
+  width: 100%;
+  max-width: 680px;
+  border-radius: 12px;
+  margin: 40px 0 24px 0;
+  padding: 40px;
 }
 
 header div {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
   margin-top: 16px;
 }
 
-li {
-  list-style: inside;
+.skills ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills ul li {
+  background-color: #1f2124;
+  padding: 8px 12px;
+  border-radius: 999px;
 }
 
 .banner {
@@ -103,4 +124,34 @@ footer div {
   display: flex;
   gap: 24px;
   align-items: center;
+}
+
+.projetos div:first-of-type {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.projetos article {
+  background-color: #1f2124;
+  flex: 1;
+  min-width: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  gap: 4px;
+  padding: 16px;
+}
+
+.projetos article p {
+  flex-grow: 1;
+}
+
+.imagem_projeto {
+  height: 100px;
+  background-color: #18181b;
 }
